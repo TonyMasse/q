@@ -5,6 +5,6 @@ wget https://raw.githubusercontent.com/logrhythm/versions/master/lrctl
 chmod +x lrctl
 # For CentOS 8:
 # sudo yum erase podman buildah
-./lrctl init
+yes | ./lrctl init
 ./lrctl metrics start
 ./lrctl open-collector start
