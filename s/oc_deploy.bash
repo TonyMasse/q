@@ -6,5 +6,6 @@ chmod +x lrctl
 # For CentOS 8:
 # sudo yum erase podman buildah
 echo -e "y\ny" | ./lrctl init
-./lrctl metrics start
+echo -e "N\n" | ./lrctl metrics start
+# echo -e "localhost\n514\n\n\n\n\n\n\n\n" | ./lrctl open-collector start
 ./lrctl open-collector start
